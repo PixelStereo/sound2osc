@@ -622,7 +622,7 @@
 					"patching_rect" : [ 53.310669, 51.0, 37.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 265.159241, 18.0, 37.0, 20.0 ],
-					"text" : "v 0.1"
+					"text" : "v 0.2"
 				}
 
 			}
@@ -1008,34 +1008,6 @@
 				"name" : "analyz.model.maxpat",
 				"bootpath" : "/Volumes/data/GITs/sound2osc",
 				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "zsa.easy_centroid~.maxpat",
-				"bootpath" : "/Users/reno/Documents/Max/Packages/zsa.descriptors_1.01/misc",
-				"patcherrelativepath" : "../../../../Users/reno/Documents/Max/Packages/zsa.descriptors_1.01/misc",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "zsa.abs_centroid~.maxpat",
-				"bootpath" : "/Users/reno/Documents/Max/Packages/zsa.descriptors_1.01/misc",
-				"patcherrelativepath" : "../../../../Users/reno/Documents/Max/Packages/zsa.descriptors_1.01/misc",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "zsa.easy_mel~.maxpat",
-				"bootpath" : "/Users/reno/Documents/Max/Packages/zsa.descriptors_1.01/misc",
-				"patcherrelativepath" : "../../../../Users/reno/Documents/Max/Packages/zsa.descriptors_1.01/misc",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "zsa.abs_mel~.maxpat",
-				"bootpath" : "/Users/reno/Documents/Max/Packages/zsa.descriptors_1.01/misc",
-				"patcherrelativepath" : "../../../../Users/reno/Documents/Max/Packages/zsa.descriptors_1.01/misc",
 				"type" : "JSON",
 				"implicit" : 1
 			}
