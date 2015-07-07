@@ -5,10 +5,10 @@
 			"major" : 6,
 			"minor" : 1,
 			"revision" : 10,
-			"architecture" : "x86"
+			"architecture" : "x64"
 		}
 ,
-		"rect" : [ 385.0, 542.0, 320.0, 386.0 ],
+		"rect" : [ 10.0, 553.0, 320.0, 386.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 10.0,
@@ -272,7 +272,7 @@
 							"major" : 6,
 							"minor" : 1,
 							"revision" : 10,
-							"architecture" : "x86"
+							"architecture" : "x64"
 						}
 ,
 						"rect" : [ 25.0, 70.0, 726.0, 173.0 ],
@@ -296,6 +296,34 @@
 						"tags" : "",
 						"boxes" : [ 							{
 								"box" : 								{
+									"fontname" : "Arial Bold",
+									"fontsize" : 10.0,
+									"id" : "obj-8",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 618.75, 80.5, 44.0, 18.0 ],
+									"text" : "qlim 11"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Arial Bold",
+									"fontsize" : 10.0,
+									"id" : "obj-2",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 557.75, 80.5, 45.0, 18.0 ],
+									"text" : "qlim 10"
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"comment" : "access to sfplay object",
 									"id" : "obj-6",
 									"maxclass" : "inlet",
@@ -314,7 +342,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 557.75, 85.406067, 126.0, 18.0 ],
+									"patching_rect" : [ 557.75, 129.565796, 126.0, 18.0 ],
 									"text" : "udpsend 127.0.0.1 11111"
 								}
 
@@ -475,7 +503,7 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-11", 0 ],
+									"destination" : [ "obj-8", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
 									"source" : [ "obj-10", 0 ]
@@ -520,6 +548,15 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-11", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-2", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-14", 2 ],
 									"disabled" : 0,
 									"hidden" : 0,
@@ -538,7 +575,7 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-11", 0 ],
+									"destination" : [ "obj-2", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
 									"source" : [ "obj-5", 0 ]
@@ -569,6 +606,15 @@
 									"disabled" : 0,
 									"hidden" : 0,
 									"source" : [ "obj-7", 1 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-11", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-8", 0 ]
 								}
 
 							}
@@ -1012,6 +1058,34 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "zsa.easy_centroid~.maxpat",
+				"bootpath" : "/Users/reno/Documents/Max/Packages/zsa.descriptors_1.01/misc",
+				"patcherrelativepath" : "../../../../Users/reno/Documents/Max/Packages/zsa.descriptors_1.01/misc",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "zsa.abs_centroid~.maxpat",
+				"bootpath" : "/Users/reno/Documents/Max/Packages/zsa.descriptors_1.01/misc",
+				"patcherrelativepath" : "../../../../Users/reno/Documents/Max/Packages/zsa.descriptors_1.01/misc",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "zsa.easy_mel~.maxpat",
+				"bootpath" : "/Users/reno/Documents/Max/Packages/zsa.descriptors_1.01/misc",
+				"patcherrelativepath" : "../../../../Users/reno/Documents/Max/Packages/zsa.descriptors_1.01/misc",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "zsa.abs_mel~.maxpat",
+				"bootpath" : "/Users/reno/Documents/Max/Packages/zsa.descriptors_1.01/misc",
+				"patcherrelativepath" : "../../../../Users/reno/Documents/Max/Packages/zsa.descriptors_1.01/misc",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "analyz.view.maxpat",
 				"bootpath" : "/Volumes/data/GITs/sound2osc",
 				"patcherrelativepath" : ".",
@@ -1031,6 +1105,14 @@
 				"patcherrelativepath" : "../../../../Applications/Max 6.1/examples/max-tricks/send-receive-tricks/lib",
 				"type" : "JSON",
 				"implicit" : 1
+			}
+, 			{
+				"name" : "zsa.centroid~.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "zsa.mel~.mxo",
+				"type" : "iLaX"
 			}
  ]
 	}
