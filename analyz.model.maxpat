@@ -5,10 +5,10 @@
 			"major" : 6,
 			"minor" : 1,
 			"revision" : 10,
-			"architecture" : "x86"
+			"architecture" : "x64"
 		}
 ,
-		"rect" : [ 1224.0, 320.0, 688.0, 369.0 ],
+		"rect" : [ 1100.0, 327.0, 688.0, 369.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -43,7 +43,7 @@
 							"major" : 6,
 							"minor" : 1,
 							"revision" : 10,
-							"architecture" : "x86"
+							"architecture" : "x64"
 						}
 ,
 						"rect" : [ 25.0, 70.0, 299.0, 243.0 ],
@@ -239,7 +239,7 @@
 							"major" : 6,
 							"minor" : 1,
 							"revision" : 10,
-							"architecture" : "x86"
+							"architecture" : "x64"
 						}
 ,
 						"rect" : [ 75.0, 119.0, 294.0, 138.0 ],
@@ -508,7 +508,7 @@
 							"major" : 6,
 							"minor" : 1,
 							"revision" : 10,
-							"architecture" : "x86"
+							"architecture" : "x64"
 						}
 ,
 						"rect" : [ 25.0, 70.0, 299.0, 243.0 ],
@@ -683,8 +683,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 494.359131, 182.0, 45.0, 18.0 ],
-					"text" : "> 0.02"
+					"patching_rect" : [ 494.359131, 181.0, 44.0, 18.0 ],
+					"text" : "> 0.01"
 				}
 
 			}
@@ -704,7 +704,7 @@
 							"major" : 6,
 							"minor" : 1,
 							"revision" : 10,
-							"architecture" : "x86"
+							"architecture" : "x64"
 						}
 ,
 						"rect" : [ 25.0, 70.0, 299.0, 243.0 ],
@@ -886,10 +886,10 @@
 							"major" : 6,
 							"minor" : 1,
 							"revision" : 10,
-							"architecture" : "x86"
+							"architecture" : "x64"
 						}
 ,
-						"rect" : [ 384.0, 69.0, 405.0, 533.0 ],
+						"rect" : [ 384.0, 69.0, 968.0, 816.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 10.0,
@@ -1473,7 +1473,7 @@
 							"major" : 6,
 							"minor" : 1,
 							"revision" : 10,
-							"architecture" : "x86"
+							"architecture" : "x64"
 						}
 ,
 						"rect" : [ 328.0, 176.0, 740.0, 447.0 ],
@@ -1930,7 +1930,7 @@
 											"major" : 6,
 											"minor" : 1,
 											"revision" : 10,
-											"architecture" : "x86"
+											"architecture" : "x64"
 										}
 ,
 										"rect" : [ 25.0, 69.0, 370.0, 330.0 ],
@@ -2693,7 +2693,7 @@
 							"major" : 6,
 							"minor" : 1,
 							"revision" : 10,
-							"architecture" : "x86"
+							"architecture" : "x64"
 						}
 ,
 						"rect" : [ 25.0, 70.0, 201.0, 220.0 ],
@@ -2783,7 +2783,7 @@
 											"major" : 6,
 											"minor" : 1,
 											"revision" : 10,
-											"architecture" : "x86"
+											"architecture" : "x64"
 										}
 ,
 										"rect" : [ 369.0, 374.0, 640.0, 480.0 ],
@@ -2913,7 +2913,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 1,
-									"outlettype" : [ "" ],
+									"outlettype" : [ "signal" ],
 									"patching_rect" : [ 19.0, 65.0, 155.0, 20.0 ],
 									"text" : "zsa.easy_centroid~ 1024 8"
 								}
@@ -2985,7 +2985,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 50.0, 54.0, 25.0, 25.0 ]
 				}
 
@@ -3006,7 +3006,7 @@
 							"major" : 6,
 							"minor" : 1,
 							"revision" : 10,
-							"architecture" : "x86"
+							"architecture" : "x64"
 						}
 ,
 						"rect" : [ 25.0, 70.0, 299.0, 243.0 ],
@@ -3398,6 +3398,43 @@
 					"source" : [ "obj-9", 0 ]
 				}
 
+			}
+ ],
+		"dependency_cache" : [ 			{
+				"name" : "zsa.easy_centroid~.maxpat",
+				"bootpath" : "/Users/reno/Documents/Max/Packages/zsa.descriptors_1.01/misc",
+				"patcherrelativepath" : "../../../../Users/reno/Documents/Max/Packages/zsa.descriptors_1.01/misc",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "zsa.abs_centroid~.maxpat",
+				"bootpath" : "/Users/reno/Documents/Max/Packages/zsa.descriptors_1.01/misc",
+				"patcherrelativepath" : "../../../../Users/reno/Documents/Max/Packages/zsa.descriptors_1.01/misc",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "zsa.easy_mel~.maxpat",
+				"bootpath" : "/Users/reno/Documents/Max/Packages/zsa.descriptors_1.01/misc",
+				"patcherrelativepath" : "../../../../Users/reno/Documents/Max/Packages/zsa.descriptors_1.01/misc",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "zsa.abs_mel~.maxpat",
+				"bootpath" : "/Users/reno/Documents/Max/Packages/zsa.descriptors_1.01/misc",
+				"patcherrelativepath" : "../../../../Users/reno/Documents/Max/Packages/zsa.descriptors_1.01/misc",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "zsa.centroid~.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "zsa.mel~.mxo",
+				"type" : "iLaX"
 			}
  ]
 	}
