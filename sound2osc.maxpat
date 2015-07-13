@@ -8,7 +8,7 @@
 			"architecture" : "x64"
 		}
 ,
-		"rect" : [ 2089.0, 417.0, 320.0, 386.0 ],
+		"rect" : [ 1988.0, 605.0, 323.0, 387.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 10.0,
@@ -31,13 +31,13 @@
 				"box" : 				{
 					"fontname" : "Arial Bold",
 					"fontsize" : 10.0,
-					"id" : "obj-56",
+					"id" : "obj-27",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 246.499969, 169.046967, 75.0, 18.0 ],
-					"text" : "prepend seek"
+					"patching_rect" : [ 390.499969, 117.0, 67.0, 18.0 ],
+					"text" : "prepend set"
 				}
 
 			}
@@ -45,13 +45,27 @@
 				"box" : 				{
 					"fontname" : "Arial Bold",
 					"fontsize" : 10.0,
-					"id" : "obj-55",
+					"id" : "obj-17",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 425.280334, 181.0, 299.0, 18.0 ],
+					"text" : "j.parameter seek @type decimal @range 0 10 @clipmode low"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial Bold",
+					"fontsize" : 10.0,
+					"id" : "obj-56",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 225.5, 147.5, 67.0, 18.0 ],
-					"text" : "prepend set"
+					"patching_rect" : [ 246.499969, 181.0, 75.0, 18.0 ],
+					"text" : "prepend seek"
 				}
 
 			}
@@ -73,7 +87,7 @@
 							"architecture" : "x64"
 						}
 ,
-						"rect" : [ 0.0, 0.0, 640.0, 480.0 ],
+						"rect" : [ 2499.0, 511.0, 281.0, 221.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -101,7 +115,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 70.593445, 200.406067, 100.0, 18.0 ],
+									"patching_rect" : [ 97.093445, 123.406067, 77.0, 18.0 ],
 									"text" : "prepend open"
 								}
 
@@ -111,12 +125,12 @@
 									"fontname" : "Arial Bold",
 									"fontsize" : 10.0,
 									"id" : "obj-25",
-									"linecount" : 2,
+									"linecount" : 3,
 									"maxclass" : "newobj",
 									"numinlets" : 2,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 113.093445, 165.0, 100.0, 29.0 ],
+									"patching_rect" : [ 97.093445, 60.0, 57.5, 40.0 ],
 									"text" : "combine PATH mayu.aif"
 								}
 
@@ -130,7 +144,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 113.093445, 100.0, 81.0, 18.0 ],
+									"patching_rect" : [ 177.093445, 17.0, 81.0, 18.0 ],
 									"text" : "loadmess path"
 								}
 
@@ -140,11 +154,12 @@
 									"fontname" : "Arial",
 									"fontsize" : 13.0,
 									"id" : "obj-47",
+									"linecount" : 2,
 									"maxclass" : "newobj",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "float" ],
-									"patching_rect" : [ 50.0, 195.0, 96.0, 21.0 ],
+									"patching_rect" : [ 21.0, 114.406067, 72.0, 36.0 ],
 									"text" : "snapshot~ 100"
 								}
 
@@ -157,7 +172,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "signal" ],
-									"patching_rect" : [ 50.0, 40.0, 25.0, 25.0 ]
+									"patching_rect" : [ 21.0, 17.0, 25.0, 25.0 ]
 								}
 
 							}
@@ -169,7 +184,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 113.093445, 40.0, 25.0, 25.0 ]
+									"patching_rect" : [ 97.093445, 17.0, 25.0, 25.0 ]
 								}
 
 							}
@@ -180,7 +195,7 @@
 									"maxclass" : "outlet",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 50.0, 278.406067, 25.0, 25.0 ]
+									"patching_rect" : [ 21.0, 165.812134, 25.0, 25.0 ]
 								}
 
 							}
@@ -191,7 +206,7 @@
 									"maxclass" : "outlet",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 70.593445, 278.406067, 25.0, 25.0 ]
+									"patching_rect" : [ 97.093445, 165.812134, 25.0, 25.0 ]
 								}
 
 							}
@@ -202,7 +217,7 @@
 									"maxclass" : "outlet",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 113.093445, 278.406067, 25.0, 25.0 ]
+									"patching_rect" : [ 177.093445, 165.812134, 25.0, 25.0 ]
 								}
 
 							}
@@ -337,7 +352,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "int", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 196.75, 253.0, 54.0, 21.0 ],
+					"patching_rect" : [ 390.499969, 234.5, 54.0, 21.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 253.032898, 42.0, 61.252686, 21.0 ],
 					"triangle" : 0,
@@ -667,7 +682,7 @@
 							"architecture" : "x64"
 						}
 ,
-						"rect" : [ 624.0, 495.0, 726.0, 173.0 ],
+						"rect" : [ 2445.0, 157.0, 745.0, 222.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -687,6 +702,31 @@
 						"digest" : "",
 						"tags" : "",
 						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-12",
+									"maxclass" : "toggle",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "int" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 324.0, 128.0, 20.0, 20.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Helvetica Neue Light Italic",
+									"fontsize" : 12.0,
+									"id" : "obj-24",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 324.0, 157.006134, 217.0, 20.0 ],
+									"text" : "j.minuit_device @local/name sound2osc"
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"fontname" : "Arial Bold",
 									"fontsize" : 10.0,
@@ -899,6 +939,15 @@
 									"disabled" : 0,
 									"hidden" : 0,
 									"source" : [ "obj-10", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-24", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-12", 0 ]
 								}
 
 							}
@@ -1366,6 +1415,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-42", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-17", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-103", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -1397,6 +1455,15 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-24", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-42", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-27", 0 ]
 				}
 
 			}
@@ -1475,7 +1542,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-55", 0 ],
+					"destination" : [ "obj-27", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-54", 0 ]
@@ -1488,15 +1555,6 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-54", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-42", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-55", 0 ]
 				}
 
 			}
@@ -1538,8 +1596,8 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-103" : [ "right", "right", 0 ],
-			"obj-31" : [ "left", "left", 0 ]
+			"obj-31" : [ "left", "left", 0 ],
+			"obj-103" : [ "right", "right", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
@@ -1599,11 +1657,30 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "j.minuit_device.maxpat",
+				"bootpath" : "/Volumes/data/GITs/Jamoma/Implementations/Max/Jamoma/patchers/components/protocol",
+				"patcherrelativepath" : "../Jamoma/Implementations/Max/Jamoma/patchers/components/protocol",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "zsa.centroid~.mxo",
 				"type" : "iLaX"
 			}
 , 			{
 				"name" : "zsa.mel~.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "j.modular.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "j.receive.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "j.parameter.mxo",
 				"type" : "iLaX"
 			}
  ]
