@@ -4,12 +4,12 @@
 		"appversion" : 		{
 			"major" : 7,
 			"minor" : 0,
-			"revision" : 4,
+			"revision" : 5,
 			"architecture" : "x86",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 1930.0, 460.0, 323.0, 387.0 ],
+		"rect" : [ 1944.0, 45.0, 320.0, 385.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 10.0,
@@ -95,7 +95,7 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 0,
-							"revision" : 4,
+							"revision" : 5,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -136,7 +136,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 97.093445, 123.406067, 77.0, 18.0 ],
+									"patching_rect" : [ 97.093445, 123.406067, 77.0, 20.0 ],
 									"style" : "",
 									"text" : "prepend open"
 								}
@@ -152,7 +152,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 97.093445, 60.0, 57.5, 40.0 ],
+									"patching_rect" : [ 97.093445, 60.0, 57.5, 42.0 ],
 									"style" : "",
 									"text" : "combine PATH mayu.aif"
 								}
@@ -167,7 +167,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 177.093445, 17.0, 81.0, 18.0 ],
+									"patching_rect" : [ 177.093445, 17.0, 81.0, 20.0 ],
 									"style" : "",
 									"text" : "loadmess path"
 								}
@@ -183,7 +183,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "float" ],
-									"patching_rect" : [ 21.0, 114.406067, 72.0, 36.0 ],
+									"patching_rect" : [ 21.0, 114.406067, 72.0, 38.0 ],
 									"style" : "",
 									"text" : "snapshot~ 100"
 								}
@@ -371,16 +371,16 @@
 , 			{
 				"box" : 				{
 					"fontname" : "Arial",
-					"fontsize" : 13.0,
+					"fontsize" : 12.0,
 					"id" : "obj-42",
 					"maxclass" : "number",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 390.499969, 234.5, 54.0, 23.0 ],
+					"patching_rect" : [ 390.499969, 234.5, 51.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 253.032898, 42.0, 62.0, 23.0 ],
+					"presentation_rect" : [ 233.079651, 35.0, 77.0, 22.0 ],
 					"style" : "",
 					"triangle" : 0,
 					"triscale" : 0.9
@@ -415,49 +415,6 @@
 					"save" : [ "#N", "thispatcher", ";", "#Q", "end", ";" ],
 					"style" : "",
 					"text" : "thispatcher"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"color" : [ 0.0, 0.572549, 0.811765, 1.0 ],
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"id" : "obj-19",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 15.0, 60.244522, 95.0, 22.0 ],
-					"style" : "",
-					"text" : "s /osc/active"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
-					"bgoncolor" : [ 1.0, 1.0, 1.0, 1.0 ],
-					"fontname" : "Helvetica Neue Light Italic",
-					"fontsize" : 14.0,
-					"id" : "obj-10",
-					"legacytextcolor" : 1,
-					"maxclass" : "textbutton",
-					"mode" : 1,
-					"numinlets" : 1,
-					"numoutlets" : 3,
-					"outlettype" : [ "", "", "int" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 15.0, 15.0, 137.0, 30.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 40.159241, 29.0, 38.0, 12.0 ],
-					"style" : "",
-					"text" : "OFF",
-					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"texton" : "ON",
-					"textoncolor" : [ 0.0, 0.572549, 0.811765, 1.0 ],
-					"textovercolor" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"usebgoncolor" : 1,
-					"usetextovercolor" : 1
 				}
 
 			}
@@ -510,7 +467,7 @@
 					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"bgoncolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"fontname" : "Helvetica Neue Light Italic",
-					"fontsize" : 9.0,
+					"fontsize" : 10.0,
 					"id" : "obj-11",
 					"legacytextcolor" : 1,
 					"maxclass" : "textbutton",
@@ -521,7 +478,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 161.5, 2.5, 100.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 91.57962, 10.0, 36.0, 20.0 ],
+					"presentation_rect" : [ 94.57962, 7.0, 44.0, 18.0 ],
 					"style" : "",
 					"text" : "AUDIO",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
@@ -687,7 +644,7 @@
 						"followglobaltempo" : 0,
 						"formantcorrection" : 0,
 						"mode" : "basic",
-						"originallength" : [ 925755.8125, "ticks" ],
+						"originallength" : [ 984901.75, "ticks" ],
 						"originaltempo" : 120.0,
 						"pitchcorrection" : 0,
 						"quality" : "basic",
@@ -728,7 +685,7 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 0,
-							"revision" : 4,
+							"revision" : 5,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -1055,7 +1012,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 7.810669, 199.0, 60.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 7.079651, 10.0, 84.499969, 20.0 ],
+					"presentation_rect" : [ 6.079651, 7.0, 84.499969, 20.0 ],
 					"style" : ""
 				}
 
@@ -1070,7 +1027,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 53.310669, 51.0, 37.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 265.159241, 18.0, 37.0, 20.0 ],
+					"presentation_rect" : [ 279.079651, 10.0, 37.0, 20.0 ],
 					"style" : "",
 					"text" : "v 0.2"
 				}
@@ -1086,7 +1043,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 7.810669, 2.5, 127.0, 30.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 135.159241, 12.0, 130.0, 30.0 ],
+					"presentation_rect" : [ 161.079651, 4.0, 130.0, 30.0 ],
 					"style" : "",
 					"text" : "sound2osc"
 				}
@@ -1097,7 +1054,7 @@
 					"annotation" : "none",
 					"args" : [ "/analyz.2" ],
 					"bgmode" : 0,
-					"border" : 0,
+					"border" : 1,
 					"clickthrough" : 0,
 					"enablehscroll" : 0,
 					"enablevscroll" : 0,
@@ -1110,7 +1067,7 @@
 					"offset" : [ 0.0, 0.0 ],
 					"patching_rect" : [ 19.280334, 102.5, 260.0, 27.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 53.079651, 226.268738, 257.0, 150.0 ],
+					"presentation_rect" : [ 53.079651, 226.268738, 257.0, 147.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -1120,7 +1077,7 @@
 					"annotation" : "none",
 					"args" : [ "/analyz.1" ],
 					"bgmode" : 0,
-					"border" : 0,
+					"border" : 1,
 					"clickthrough" : 0,
 					"enablehscroll" : 0,
 					"enablevscroll" : 0,
@@ -1133,7 +1090,7 @@
 					"offset" : [ 0.0, 0.0 ],
 					"patching_rect" : [ 19.280334, 75.5, 260.0, 27.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 53.079651, 67.268753, 257.0, 150.0 ],
+					"presentation_rect" : [ 53.079651, 67.268753, 257.0, 147.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -1178,7 +1135,7 @@
 					"outlettype" : [ "", "int" ],
 					"patching_rect" : [ 77.280334, 164.1409, 155.0, 22.906067 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 10.079651, 42.0, 235.0, 20.0 ],
+					"presentation_rect" : [ 10.079651, 35.0, 218.0, 20.0 ],
 					"style" : ""
 				}
 
@@ -1306,15 +1263,6 @@
 			}
  ],
 		"lines" : [ 			{
-				"patchline" : 				{
-					"destination" : [ "obj-19", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-10", 0 ]
-				}
-
-			}
-, 			{
 				"patchline" : 				{
 					"destination" : [ "obj-39", 0 ],
 					"disabled" : 0,
@@ -1587,8 +1535,8 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-31" : [ "left", "left", 0 ],
-			"obj-103" : [ "right", "right", 0 ]
+			"obj-103" : [ "right", "right", 0 ],
+			"obj-31" : [ "left", "left", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
@@ -1641,7 +1589,7 @@
 			}
 , 			{
 				"name" : "j.minuit_device.maxpat",
-				"bootpath" : "/Volumes/data/GITs/Jamoma/Implementations/Max/Jamoma/patchers/components/protocol",
+				"bootpath" : "~/Documents/Max 7/Packages/Jamoma/patchers/components/protocol",
 				"type" : "JSON",
 				"implicit" : 1
 			}
