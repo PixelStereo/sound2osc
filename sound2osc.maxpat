@@ -41,14 +41,45 @@
 					"fontface" : 0,
 					"fontname" : "Helvetica Neue Light Italic",
 					"fontsize" : 12.0,
-					"id" : "obj-75",
-					"linecount" : 3,
+					"id" : "obj-4",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 161.5, 279.006134, 141.283997, 50.0 ],
+					"patching_rect" : [ 161.5, 346.006134, 47.0, 22.0 ],
 					"style" : "",
-					"text" : "j.minuit_device @local/name sound2osc @local/port 33333"
+					"text" : "s /seek"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontface" : 0,
+					"fontname" : "Helvetica Neue Light Italic",
+					"fontsize" : 12.0,
+					"id" : "obj-2",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 161.5, 311.006134, 68.0, 22.0 ],
+					"style" : "",
+					"text" : "route /seek"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontface" : 0,
+					"fontname" : "Helvetica Neue Light Italic",
+					"fontsize" : 12.0,
+					"id" : "obj-75",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 161.5, 279.006134, 104.0, 22.0 ],
+					"style" : "",
+					"text" : "udpreceive 33333"
 				}
 
 			}
@@ -68,7 +99,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 59.0, 104.0, 377.0, 189.0 ],
+						"rect" : [ 2276.0, 354.0, 377.0, 189.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -79,7 +110,7 @@
 						"gridsnaponopen" : 1,
 						"objectsnaponopen" : 1,
 						"statusbarvisible" : 2,
-						"toolbarvisible" : 1,
+						"toolbarvisible" : 0,
 						"lefttoolbarpinned" : 0,
 						"toptoolbarpinned" : 0,
 						"righttoolbarpinned" : 0,
@@ -250,7 +281,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 59.0, 104.0, 800.0, 429.0 ],
+						"rect" : [ 2414.0, 395.0, 541.0, 414.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -261,7 +292,7 @@
 						"gridsnaponopen" : 1,
 						"objectsnaponopen" : 1,
 						"statusbarvisible" : 2,
-						"toolbarvisible" : 1,
+						"toolbarvisible" : 0,
 						"lefttoolbarpinned" : 0,
 						"toptoolbarpinned" : 0,
 						"righttoolbarpinned" : 0,
@@ -412,16 +443,17 @@
 							}
 , 							{
 								"box" : 								{
+									"fontface" : 0,
 									"fontname" : "Arial Bold",
 									"fontsize" : 10.0,
 									"id" : "obj-17",
 									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 2,
-									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 469.0, 205.75238, 299.0, 20.0 ],
+									"numinlets" : 0,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 469.0, 205.75238, 42.0, 20.0 ],
 									"style" : "",
-									"text" : "j.parameter seek @type decimal @range 0 10 @clipmode low"
+									"text" : "r /seek"
 								}
 
 							}
@@ -450,7 +482,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 4,
 									"outlettype" : [ "signal", "signal", "signal", "bang" ],
-									"patching_rect" : [ 160.0, 150.75238, 157.939331, 22.0 ],
+									"patching_rect" : [ 160.0, 150.75238, 300.439331, 22.0 ],
 									"saved_object_attributes" : 									{
 										"basictuning" : 440,
 										"followglobaltempo" : 0,
@@ -1372,6 +1404,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-4", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-2", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-69", 2 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -1434,6 +1475,15 @@
 				}
 
 			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-2", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-75", 0 ]
+				}
+
+			}
  ],
 		"parameters" : 		{
 			"obj-31" : [ "left", "left", 0 ],
@@ -1489,29 +1539,11 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "j.minuit_device.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/Jamoma/patchers/components/protocol",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "j.parameter.mxo",
-				"type" : "iLaX"
-			}
-, 			{
 				"name" : "zsa.centroid~.mxo",
 				"type" : "iLaX"
 			}
 , 			{
 				"name" : "zsa.mel~.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "j.modular.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "j.receive.mxo",
 				"type" : "iLaX"
 			}
  ],
