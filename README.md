@@ -2,6 +2,6 @@
 ---
 Convert audio signal to osc messages (amplitude & pitch)
 
-##Dependancies
+## Dependancies
 needs Zsa.descriptors package
 http://www.e--j.com/index.php/download-zsa/
